@@ -20,4 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/cars', [CarController::class, 'TestHeandler']);
+Route::post('/cars', [CarController::class, 'CreateCarHandler']);
