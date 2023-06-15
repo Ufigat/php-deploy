@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Service\impl\ICarService;
+use App\Service\carService\ICarService;
 use Illuminate\Support\ServiceProvider;
 
 class CarServiceProvider extends ServiceProvider

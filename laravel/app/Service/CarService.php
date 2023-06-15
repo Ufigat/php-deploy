@@ -3,7 +3,7 @@
 namespace App\Service;
 
 use App\Http\Requests\CarRequestDto;
-use App\Http\Responses\CarResponseDto;
+use App\Http\Responses\Car\CarResponseDto;
 
 interface CarService
 {
