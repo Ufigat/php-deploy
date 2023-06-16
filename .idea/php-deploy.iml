@@ -125,6 +125,23 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/spatie/data-transfer-object" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/symfony/psr-http-message-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/stella-maris/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/defuse/php-encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/uri-interfaces" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/oauth2-server" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/event" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/uri" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/tymon/jwt-auth" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

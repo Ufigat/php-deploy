@@ -18,15 +18,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('jwt.verify')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:sanctum')->get('/test', [ProtectedTestController::class, 'testHandler']);
+Route::middleware('jwt.verify')->get('/test', [ProtectedTestController::class, 'testHandler']);
+
+Route::middleware('jwt.verify')->post('/logout', [AuthController::class, 'logoutHandler']);
 
 Route::post('/cars', [CarController::class, 'createCarHandler']);
 
-Route::post('/login', [AuthController::class, 'loginHandler']);
+Route::post('/login', [AuthController::class, 'loginHandler'])->name("login");
 
 Route::post('/registration', [AuthController::class, 'registrationHandler']);
 

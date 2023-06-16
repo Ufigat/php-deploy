@@ -42,9 +42,9 @@ return [
         ],
 
         'api' => [
-            'driver' => 'password',
+            'driver' => 'jwt',
             'provider' => 'users',
-        ]
+        ],
     ],
 
     /*

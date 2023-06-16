@@ -9,8 +9,8 @@ use App\Http\Responses\User\LoginResponseDto;
 use App\Http\Responses\User\UserResponseDto;
 use App\Models\User;
 use App\Service\AuthService;
+use JWTAuth;
 use Illuminate\Support\Facades\Hash;
-use Symfony\Component\HttpFoundation\JsonResponse;
 
 class IAuthService implements AuthService
 {
@@ -54,6 +54,10 @@ class IAuthService implements AuthService
             throw new UserNotFoundException("The provided credentials are incorrect");
         }
 
-        return new LoginResponseDto("User Logged In successfully", $user->createToken("API TOKEN")->plainTextToken);
+        $credentials = ["email" => $requestArray["email"], "password" => $requestArray["password"]];
+
+        $token = JWTAuth::attempt($credentials);
+
+        return new LoginResponseDto("User Logged In successfully", $token);;
     }
 }
