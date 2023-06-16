@@ -12,8 +12,18 @@ class Car extends Model
     protected $table = 'cars';
 
     protected $fillable = [
-        'brand',
-        'color',
+        'brand_id',
+        'color_id',
         'number',
     ];
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
+
+    public function color()
+    {
+        return $this->belongsTo(Color::class);
+    }
 }
